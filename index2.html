@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V Conversas em Medicina Intensiva — 23 outubro 2026, Aveiro</title>
+<meta name="description" content="Sustentabilidade na Medicina Intensiva. Da evidência à prática, da intenção ao impacto. 23 de outubro de 2026, Aveiro. Serviço de Medicina Intensiva, ULS Região de Aveiro.">
+<meta property="og:title" content="V Conversas em Medicina Intensiva">
+<meta property="og:description" content="Sustentabilidade na Medicina Intensiva — 23 outubro 2026, Aveiro.">
+<meta property="og:image" content="cartaz.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0E3B33">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&family=Jost:wght@400;500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --green:#0E3B33;
+    --green-dark:#082B24;
+    --green-soft:#29584C;
+    --gold:#B38B4D;
+    --gold-light:#D5B67A;
+    --cream:#FAF7F2;
+    --white:#ffffff;
+    --text:#17332D;
+    --muted:#6D7C76;
+    --radius:14px;
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+    --max:1200px;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body{
+background:var(--cream);
+color:var(--text);
+font-family:"Source Sans 3",sans-serif;
+line-height:1.7;
+font-size:18px;
+-webkit-font-smoothing:antialiased;
+}
+.wrap{
+max-width:var(--max);
+margin:auto;
+padding:0 32px;
+}
+img{
+max-width:100%;
+display:block;
+}
+a{
+text-decoration:none;
+color:inherit;
+}
+section{
+padding:90px 0;
+}
+h1,h2{
+font-family:Jost,sans-serif;
+letter-spacing:-1px;
+}
+header{
+background:linear-gradient(180deg,#FAF7F2 0%,#F4EFE5 100%);
+position:relative;
+overflow:hidden;
+padding:80px 0 100px;
+}
+header::before{
+content:"";
+position:absolute;
+right:-180px;
+top:-180px;
+width:700px;
+height:700px;
+border-radius:50%;
+border:1px solid rgba(179,139,77,.22);
+}
+header::after{
+content:"";
+position:absolute;
+right:-70px;
+top:-70px;
+width:470px;
+height:470px;
+border-radius:50%;
+border:1px solid rgba(179,139,77,.14);
+}
+.hero{
+display:grid;
+grid-template-columns:1.05fr .95fr;
+gap:70px;
+align-items:center;
+position:relative;
+z-index:2;
+}
+.org{
+font-family:Jost;
+letter-spacing:.25em;
+text-transform:uppercase;
+font-size:.8rem;
+color:var(--gold);
+margin-bottom:40px;
+}
+.numeral{
+font-family:"Cormorant Garamond";
+font-style:italic;
+font-size:7rem;
+line-height:.8;
+color:var(--gold);
+}
+.conversas{
+display:block;
+font-family:Jost;
+letter-spacing:.18em;
+text-transform:uppercase;
+font-size:1.2rem;
+margin-top:-10px;
+}
+h1{
+font-size:5rem;
+line-height:.9;
+text-transform:uppercase;
+margin:10px 0 30px;
+color:var(--green);
+}
+.tema{
+font-family:"Cormorant Garamond";
+font-style:italic;
+font-size:2rem;
+border-top:2px solid rgba(179,139,77,.35);
+padding-top:28px;
+max-width:550px;
+}
+.mote{
+margin-top:15px;
+font-family:"Cormorant Garamond";
+font-style:italic;
+font-size:1.35rem;
+color:var(--gold);
+}
+.hero-image{
+position:relative;
+}
+.hero-image img{
+border-radius:24px;
+box-shadow:var(--shadow);
+}
+.hero-image::before{
+content:"";
+position:absolute;
+left:-30px;
+bottom:-30px;
+width:100%;
+height:100%;
+border:2px solid rgba(179,139,77,.3);
+border-radius:24px;
+z-index:-1;
+}
+.info-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:-45px;
+position:relative;
+z-index:5;
+}
+.card{
+background:white;
+padding:35px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+transition:.25s;
+}
+.card:hover{
+transform:translateY(-6px);
+}
+.card small{
+display:block;
+font-family:Jost;
+letter-spacing:.18em;
+text-transform:uppercase;
+color:var(--gold);
+margin-bottom:14px;
+}
+.card h3{
+font-family:Jost;
+font-size:1.45rem;
+color:var(--green);
+margin-bottom:6px;
+}
+.card p{
+color:var(--muted);
+}
+.cta{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:18px 42px;
+margin-top:40px;
+background:var(--green);
+color:white;
+font-family:Jost;
+letter-spacing:.1em;
+text-transform:uppercase;
+border-radius:6px;
+transition:.2s;
+}
+.cta:hover{
+background:var(--green-dark);
+transform:translateY(-2px);
+}
+.temas{
+background:white;
+}
+.temas h2{
+text-align:center;
+font-size:2.4rem;
+margin-bottom:60px;
+color:var(--green);
+}
+.temas ul{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+list-style:none;
+}
+.temas li{
+background:var(--cream);
+padding:35px;
+border-radius:12px;
+font-family:Jost;
+text-transform:uppercase;
+font-size:.95rem;
+letter-spacing:.08em;
+text-align:center;
+transition:.25s;
+border:1px solid #eee;
+}
+.temas li:hover{
+background:white;
+transform:translateY(-5px);
+box-shadow:var(--shadow);
+}
+footer{
+background:var(--green);
+color:white;
+padding:70px 0;
+margin-top:90px;
+}
+footer p{
+opacity:.92;
+margin-bottom:10px;
+}
+.patro{
+color:var(--gold-light);
+font-size:.9rem;
+margin-top:25px;
+}
+
+/* ─── Patrocinadores ─── */
+.sponsors{
+padding:90px 0;
+background:var(--cream);
+}
+.sponsors h2{
+font-size:2.3rem;
+text-align:center;
+margin-bottom:60px;
+color:var(--green);
+}
+.sponsor-group{
+margin-bottom:55px;
+}
+.sponsor-group h3{
+font-family:Jost,sans-serif;
+font-size:1rem;
+letter-spacing:.18em;
+text-transform:uppercase;
+color:var(--gold);
+margin-bottom:22px;
+text-align:center;
+}
+.logo-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:24px;
+}
+.logo-card{
+background:white;
+border-radius:12px;
+padding:38px;
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:120px;
+box-shadow:var(--shadow);
+font-family:Jost,sans-serif;
+font-weight:600;
+font-size:1rem;
+color:var(--green);
+transition:.25s;
+}
+.logo-card:hover{
+transform:translateY(-5px);
+}
+.temas strong{
+font-weight:600;
+display:block;
+font-size:1rem;
+line-height:1.5;
+}
+
+/* ─── Rodapé ─── */
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:60px;
+}
+.footer-grid h3{
+font-family:Jost;
+margin-bottom:18px;
+font-size:1.5rem;
+}
+.footer-grid h4{
+font-family:Jost;
+margin-bottom:15px;
+letter-spacing:.08em;
+text-transform:uppercase;
+color:var(--gold-light);
+font-size:.9rem;
+}
+.footer-button{
+display:inline-block;
+margin-top:20px;
+padding:14px 24px;
+background:white;
+color:var(--green);
+font-family:Jost;
+border-radius:6px;
+transition:.25s;
+}
+.footer-button:hover{
+transform:translateY(-3px);
+}
+.sticky-register{
+display:none;
+}
+@media(max-width:900px){
+.footer-grid{
+grid-template-columns:1fr;
+gap:40px;
+}
+.sticky-register{
+display:block;
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(12px);
+padding:14px;
+box-shadow:0 -8px 25px rgba(0,0,0,.12);
+z-index:1000;
+}
+.sticky-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
+.sticky-inner small{
+display:block;
+color:var(--muted);
+}
+body{
+padding-bottom:90px;
+}
+}
+
+/* ─── Animações ─── */
+.fade{
+opacity:0;
+transform:translateY(25px);
+animation:fadeUp .7s forwards;
+}
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(25px);
+}
+to{
+opacity:1;
+transform:none;
+}
+}
+.hero-text{
+animation:fadeUp .8s;
+}
+.hero-image{
+animation:fadeUp 1s;
+}
+.card{
+animation:fadeUp .9s;
+}
+@media(prefers-reduced-motion:reduce){
+.fade,.hero-text,.hero-image,.card{
+animation:none;
+opacity:1;
+transform:none;
+}
+}
+
+/* ─── Ajustes da barra fixa ─── */
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:3px}
+.sticky-inner .cta{
+margin-top:0;
+padding:14px 22px;
+font-size:.9rem;
+flex:0 0 auto;
+}
+.sticky-inner strong{
+font-family:Jost,sans-serif;
+font-size:.9rem;
+line-height:1.3;
+color:var(--green);
+display:block;
+}
+.sticky-inner small{
+font-size:.8rem;
+}
+
+@media(max-width:900px){
+.hero{
+grid-template-columns:1fr;
+}
+h1{
+font-size:3.6rem;
+}
+.info-grid{
+grid-template-columns:1fr;
+margin-top:40px;
+}
+.temas ul{
+grid-template-columns:1fr;
+}
+section{
+padding:70px 0;
+}
+.sticky-register{
+padding-bottom:calc(14px + env(safe-area-inset-bottom));
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="wrap">
+        <div class="hero">
+            <div class="hero-text">
+                <p class="org">
+                    Unidade Local de Saúde Região de Aveiro · Serviço de Medicina Intensiva
+                </p>
+                <span class="numeral">V</span>
+                <span class="conversas">
+                    Conversas em
+                </span>
+                <h1>
+                    Medicina<br>
+                    Intensiva
+                </h1>
+                <p class="tema">
+                    Sustentabilidade na Medicina Intensiva
+                </p>
+                <p class="mote">
+                    Da evidência à prática.<br>
+                    Da intenção ao impacto.
+                </p>
+                <!-- ══ EDITAR: substituir o # pelo link do formulário de inscrição ══ -->
+                <a class="cta"
+                   href="#"
+                   target="_blank"
+                   rel="noopener">
+                    Inscrever →
+                </a>
+            </div>
+            <div class="hero-image">
+                <img
+                    src="cartaz.jpg"
+                    alt="Cartaz oficial das V Conversas em Medicina Intensiva">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="wrap">
+    <div class="info-grid">
+        <article class="card">
+            <small>Data</small>
+            <h3>23 Outubro 2026</h3>
+            <p>
+                Sexta-feira
+            </p>
+        </article>
+        <article class="card">
+            <small>Local</small>
+            <!-- ══ EDITAR: nome do auditório e morada ══ -->
+            <h3>Aveiro</h3>
+            <p>
+                Auditório a confirmar
+            </p>
+        </article>
+        <article class="card">
+            <small>Organização</small>
+            <h3>
+                Serviço de Medicina Intensiva
+            </h3>
+            <p>
+                ULS Região de Aveiro
+            </p>
+        </article>
+    </div>
+</div>
+
+<section class="temas">
+    <div class="wrap">
+        <h2>Temas em destaque</h2>
+        <ul>
+            <li>
+                <strong>Antibiotic<br>Stewardship</strong>
+            </li>
+            <li>
+                <strong>High Value<br>Care</strong>
+            </li>
+            <li>
+                <strong>Ética e<br>Sustentabilidade</strong>
+            </li>
+            <li>
+                <strong>Sustentabilidade<br>Farmacológica</strong>
+            </li>
+            <li>
+                <strong>Sustentabilidade<br>Digital</strong>
+            </li>
+            <li>
+                <strong>Green ICU<br>Implementação</strong>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="sponsors">
+    <div class="wrap">
+        <h2>Patrocinadores</h2>
+        <div class="sponsor-group">
+            <h3>Patrocínio Platina</h3>
+            <div class="logo-grid">
+                <div class="logo-card">
+                    Octapharma
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-group">
+            <h3>Patrocínio Ouro</h3>
+            <div class="logo-grid">
+                <div class="logo-card">
+                    Caves da Montanha
+                </div>
+                <div class="logo-card">
+                    Henrique Dinis
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-group">
+            <h3>Outros Apoios</h3>
+            <div class="logo-grid">
+                <div class="logo-card">
+                    Germano de Sousa
+                </div>
+                <div class="logo-card">
+                    La Mozzarella
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="wrap footer-grid">
+        <div>
+            <h3>V Conversas em Medicina Intensiva</h3>
+            <p>
+                Serviço de Medicina Intensiva
+            </p>
+            <p>
+                Unidade Local de Saúde da Região de Aveiro
+            </p>
+        </div>
+        <div>
+            <h4>Contacto</h4>
+            <!-- ══ EDITAR: email de contacto ══ -->
+            <p>
+                <a href="mailto:email@exemplo.pt">
+                    email@exemplo.pt
+                </a>
+            </p>
+            <p>
+                Aveiro · Portugal
+            </p>
+        </div>
+        <div>
+            <h4>Inscrição</h4>
+            <p>
+                Participação gratuita, sujeita à capacidade da sala.
+            </p>
+            <!-- ══ EDITAR: substituir o # pelo link do formulário de inscrição ══ -->
+            <a
+                class="footer-button"
+                href="#"
+                target="_blank"
+                rel="noopener">
+                Inscrever →
+            </a>
+        </div>
+    </div>
+</footer>
+
+<div class="sticky-register">
+    <div class="sticky-inner">
+        <div>
+            <strong>
+                V Conversas em Medicina Intensiva
+            </strong>
+            <small>
+                23 Outubro 2026 · Aveiro
+            </small>
+        </div>
+        <!-- ══ EDITAR: substituir o # pelo link do formulário de inscrição ══ -->
+        <a
+            href="#"
+            class="cta">
+            Inscrever →
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
