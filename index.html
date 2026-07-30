@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>V Conversas em Medicina Intensiva — 23 outubro 2026, Aveiro</title>
-<meta name="description" content="Sustentabilidade na Medicina Intensiva. Da evidência à prática, da intenção ao impacto. 23 de outubro de 2026, Aveiro. Serviço de Medicina Intensiva, ULS Região de Aveiro.">
+<meta name="description" content="Sustentabilidade na Medicina Intensiva. Da evidência à prática, da intenção ao impacto. 23 de outubro de 2026, Montebelo Vista Alegre Ílhavo Hotel. Serviço de Medicina Intensiva, ULS Região de Aveiro.">
 <meta property="og:title" content="V Conversas em Medicina Intensiva">
-<meta property="og:description" content="Sustentabilidade na Medicina Intensiva — 23 outubro 2026, Aveiro.">
+<meta property="og:description" content="Sustentabilidade na Medicina Intensiva — 23 outubro 2026, Montebelo Vista Alegre Ílhavo Hotel.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_PT">
 <!-- ══ EDITAR: URL absoluto do site e da imagem (obrigatorio para pre-visualizacao no WhatsApp/Facebook/LinkedIn) ══ -->
@@ -153,6 +153,22 @@ color:var(--gold-text);
 }
 .hero-image{
 position:relative;
+margin:0;
+}
+.hero-image a{
+display:block;
+position:relative;
+}
+.hero-image figcaption{
+margin-top:16px;
+text-align:center;
+font-family:Jost,sans-serif;
+font-size:.85rem;
+letter-spacing:.04em;
+}
+.hero-image figcaption a{
+color:var(--gold-text);
+border-bottom:1px solid rgba(179,139,77,.4);
 }
 .hero-image img{
 border-radius:24px;
@@ -160,7 +176,7 @@ box-shadow:var(--shadow);
 position:relative;
 z-index:1;
 }
-.hero-image::before{
+.hero-image a::before{
 content:"";
 position:absolute;
 left:-30px;
@@ -316,6 +332,96 @@ font-size:1rem;
 line-height:1.5;
 }
 
+/* ─── Programa ─── */
+.programa h2{
+font-size:2.3rem;
+text-align:center;
+margin-bottom:55px;
+color:var(--green);
+}
+.programa-grid{
+display:grid;
+grid-template-columns:1.05fr .95fr;
+gap:55px;
+align-items:start;
+}
+.agenda{
+list-style:none;
+}
+.agenda>li{
+display:grid;
+grid-template-columns:118px 1fr;
+gap:22px;
+padding:18px 0;
+border-bottom:1px solid rgba(179,139,77,.18);
+}
+.agenda>li:last-child{
+border-bottom:0;
+}
+.hora{
+font-family:Jost,sans-serif;
+font-weight:600;
+font-size:.86rem;
+letter-spacing:.03em;
+color:var(--gold-text);
+white-space:nowrap;
+padding-top:4px;
+}
+.agenda h3{
+font-family:Jost,sans-serif;
+font-weight:600;
+font-size:1.08rem;
+line-height:1.4;
+color:var(--green);
+}
+.sub{
+list-style:none;
+margin-top:7px;
+}
+.sub li{
+position:relative;
+padding-left:15px;
+font-size:.94rem;
+line-height:1.6;
+color:var(--muted);
+}
+.sub li::before{
+content:"";
+position:absolute;
+left:0;
+top:.72em;
+width:5px;
+height:5px;
+border-radius:50%;
+background:var(--gold);
+}
+.programa-img{
+position:sticky;
+top:30px;
+}
+.programa-img img{
+border-radius:16px;
+box-shadow:var(--shadow);
+}
+.programa-img figcaption{
+margin-top:14px;
+text-align:center;
+font-family:Jost,sans-serif;
+font-size:.85rem;
+letter-spacing:.04em;
+color:var(--muted);
+}
+.programa-img a{
+color:var(--gold-text);
+border-bottom:1px solid rgba(179,139,77,.4);
+}
+.nota-programa{
+margin-top:40px;
+text-align:center;
+font-size:.92rem;
+color:var(--muted);
+}
+
 /* ─── Rodapé ─── */
 .footer-grid{
 display:grid;
@@ -326,6 +432,9 @@ gap:60px;
 font-family:Jost;
 margin-bottom:18px;
 font-size:1.5rem;
+}
+.footer-grid a{
+overflow-wrap:anywhere;
 }
 .footer-grid h4{
 font-family:Jost;
@@ -436,6 +545,18 @@ font-size:.8rem;
 }
 
 @media(max-width:900px){
+.programa-grid{
+grid-template-columns:1fr;
+gap:40px;
+}
+.programa-img{
+position:static;
+order:-1;
+}
+.agenda>li{
+grid-template-columns:1fr;
+gap:4px;
+}
 .hero{
 grid-template-columns:1fr;
 }
@@ -457,7 +578,7 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
 }
 }
 </style>
-<!-- ══ EDITAR: confirmar morada, URL de inscricao e URL do cartaz ══ -->
+<!-- ══ EDITAR: URL de inscricao e URL absoluto do cartaz ══ -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -471,8 +592,16 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
   "image":"https://exemplo.pt/cartaz.jpeg",
   "location":{
     "@type":"Place",
-    "name":"Auditório a confirmar",
-    "address":{"@type":"PostalAddress","addressLocality":"Aveiro","addressCountry":"PT"}
+    "name":"Montebelo Vista Alegre Ílhavo Hotel",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Lugar da Vista Alegre",
+      "postalCode":"3830-292",
+      "addressLocality":"Ílhavo",
+      "addressRegion":"Aveiro",
+      "addressCountry":"PT"
+    },
+    "geo":{"@type":"GeoCoordinates","latitude":40.588587,"longitude":-8.684632}
   },
   "organizer":{
     "@type":"Organization",
@@ -521,14 +650,17 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
                     Inscrever →
                 </a>
             </div>
-            <div class="hero-image">
+            <figure class="hero-image">
                 <!-- ══ EDITAR: acrescentar width e height reais do cartaz (evita salto de layout) ══ -->
-                <img
-                    fetchpriority="high"
-                    decoding="async"
-                    src="cartaz.jpeg"
-                    alt="Cartaz oficial das V Conversas em Medicina Intensiva">
-            </div>
+                <a href="cartaz.jpeg" target="_blank" rel="noopener">
+                    <img
+                        fetchpriority="high"
+                        decoding="async"
+                        src="cartaz.jpeg"
+                        alt="Cartaz oficial das V Conversas em Medicina Intensiva">
+                </a>
+                <figcaption><a href="cartaz.jpeg" target="_blank" rel="noopener">Abrir cartaz em tamanho real</a></figcaption>
+            </figure>
         </div>
     </div>
 </header>
@@ -544,10 +676,9 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
         </article>
         <article class="card">
             <small>Local</small>
-            <!-- ══ EDITAR: nome do auditório e morada ══ -->
-            <h3>Aveiro</h3>
+            <h3>Montebelo Vista Alegre Ílhavo Hotel</h3>
             <p>
-                Auditório a confirmar
+                <a href="https://maps.google.com/?q=Montebelo+Vista+Alegre+%C3%8Dlhavo+Hotel" target="_blank" rel="noopener">Lugar da Vista Alegre, 3830-292 Ílhavo</a>
             </p>
         </article>
         <article class="card">
@@ -561,6 +692,129 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
         </article>
     </div>
 </div>
+
+<section class="programa">
+    <div class="wrap">
+        <h2>Programa preliminar</h2>
+        <div class="programa-grid">
+            <ol class="agenda">
+            <li>
+            <span class="hora">08h30 – 09h00</span>
+            <div>
+                <h3>Receção dos participantes</h3>
+            </div>
+        </li>
+            <li>
+            <span class="hora">09h00 – 09h30</span>
+            <div>
+                <h3>Sessão de abertura</h3>
+            </div>
+        </li>
+            <li>
+            <span class="hora">09h30 – 10h30</span>
+            <div>
+                <h3>1. Antibiotic Stewardship</h3>
+                <ul class="sub">
+                    <li>Descalada antibiótica e otimização da duração</li>
+                    <li>Biomarcadores na decisão clínica</li>
+                    <li>Resistência microbiana</li>
+                </ul>
+            </div>
+        </li>
+            <li>
+            <span class="hora">10h30 – 11h30</span>
+            <div>
+                <h3>2. High Value Care</h3>
+                <ul class="sub">
+                    <li>Overtesting</li>
+                    <li>Radiografia de tórax: rotina vs. necessidade clínica</li>
+                    <li>Protocolos baseados na evidência</li>
+                </ul>
+            </div>
+        </li>
+            <li>
+            <span class="hora">11h30 – 11h45</span>
+            <div>
+                <h3>Pausa para café</h3>
+            </div>
+        </li>
+            <li>
+            <span class="hora">11h45 – 12h45</span>
+            <div>
+                <h3>3. Ética e sustentabilidade</h3>
+                <ul class="sub">
+                    <li>Cuidados de fim de vida</li>
+                    <li>Proporcionalidade terapêutica</li>
+                    <li>Integração dos valores do doente</li>
+                </ul>
+            </div>
+        </li>
+            <li>
+            <span class="hora">12h45 – 14h30</span>
+            <div>
+                <h3>Almoço</h3>
+            </div>
+        </li>
+            <li>
+            <span class="hora">14h30 – 15h30</span>
+            <div>
+                <h3>4. Sustentabilidade farmacológica</h3>
+                <ul class="sub">
+                    <li>Redução do desperdício de fármacos e sistemas de perfusão</li>
+                    <li>Gestão de stocks</li>
+                    <li>Protocolos terapêuticos</li>
+                </ul>
+            </div>
+        </li>
+            <li>
+            <span class="hora">15h30 – 16h15</span>
+            <div>
+                <h3>5. Sustentabilidade digital</h3>
+                <ul class="sub">
+                    <li>Processos clínicos digitais</li>
+                    <li>Telemedicina</li>
+                    <li>Inteligência artificial</li>
+                </ul>
+            </div>
+        </li>
+            <li>
+            <span class="hora">16h15 – 16h30</span>
+            <div>
+                <h3>Pausa para café</h3>
+            </div>
+        </li>
+            <li>
+            <span class="hora">16h30 – 17h00</span>
+            <div>
+                <h3>6. Green ICU – implementação</h3>
+                <ul class="sub">
+                    <li>Desenvolvimento de projetos locais</li>
+                    <li>Barreiras e facilitadores</li>
+                    <li>Experiência nacional</li>
+                </ul>
+            </div>
+        </li>
+            <li>
+            <span class="hora">17h30 – 18h30</span>
+            <div>
+                <h3>Sessão de encerramento</h3>
+                <ul class="sub">
+                    <li>Prioridades e compromissos para o próximo ano</li>
+                    <li>Programa cultural</li>
+                </ul>
+            </div>
+        </li>
+            </ol>
+            <figure class="programa-img">
+                <a href="programa_preliminar.jpeg" target="_blank" rel="noopener">
+                    <img src="programa_preliminar.jpeg" alt="Programa preliminar das V Conversas em Medicina Intensiva, 23 de outubro de 2026" loading="lazy" decoding="async">
+                </a>
+                <figcaption><a href="programa_preliminar.jpeg" target="_blank" rel="noopener">Abrir em tamanho real</a></figcaption>
+            </figure>
+        </div>
+        <p class="nota-programa">Programa provisório. Horários e conteúdos sujeitos a alteração.</p>
+    </div>
+</section>
 
 <section class="temas">
     <div class="wrap">
@@ -642,10 +896,9 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
         </div>
         <div>
             <h4>Contacto</h4>
-            <!-- ══ EDITAR: email de contacto ══ -->
             <p>
-                <a href="mailto:email@exemplo.pt">
-                    email@exemplo.pt
+                <a href="mailto:vconversasmedicinaintensiva@gmail.com">
+                    vconversasmedicinaintensiva@gmail.com
                 </a>
             </p>
             <p>
@@ -676,7 +929,7 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
                 V Conversas
             </strong>
             <small>
-                23 Out 2026 · Aveiro
+                23 Out 2026 · Ílhavo
             </small>
         </div>
         <!-- ══ EDITAR: substituir o # pelo link do formulário de inscrição ══ -->
