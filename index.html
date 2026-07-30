@@ -7,13 +7,18 @@
 <meta name="description" content="Sustentabilidade na Medicina Intensiva. Da evidência à prática, da intenção ao impacto. 23 de outubro de 2026, Aveiro. Serviço de Medicina Intensiva, ULS Região de Aveiro.">
 <meta property="og:title" content="V Conversas em Medicina Intensiva">
 <meta property="og:description" content="Sustentabilidade na Medicina Intensiva — 23 outubro 2026, Aveiro.">
-<meta property="og:image" content="cartaz.jpg">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0E3B33">
+<meta property="og:locale" content="pt_PT">
+<!-- ══ EDITAR: URL absoluto do site e da imagem (obrigatorio para pre-visualizacao no WhatsApp/Facebook/LinkedIn) ══ -->
+<meta property="og:url" content="https://exemplo.pt/">
+<meta property="og:image" content="https://exemplo.pt/cartaz.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://exemplo.pt/">
+<meta name="theme-color" content="#FAF7F2">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&family=Jost:wght@400;500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,600&family=Jost:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -21,6 +26,7 @@
     --green-dark:#082B24;
     --green-soft:#29584C;
     --gold:#B38B4D;
+    --gold-text:#7A5C2A;
     --gold-light:#D5B67A;
     --cream:#FAF7F2;
     --white:#ffffff;
@@ -105,7 +111,7 @@ font-family:Jost;
 letter-spacing:.25em;
 text-transform:uppercase;
 font-size:.8rem;
-color:var(--gold);
+color:var(--gold-text);
 margin-bottom:40px;
 }
 .numeral{
@@ -143,7 +149,7 @@ margin-top:15px;
 font-family:"Cormorant Garamond";
 font-style:italic;
 font-size:1.35rem;
-color:var(--gold);
+color:var(--gold-text);
 }
 .hero-image{
 position:relative;
@@ -151,6 +157,8 @@ position:relative;
 .hero-image img{
 border-radius:24px;
 box-shadow:var(--shadow);
+position:relative;
+z-index:1;
 }
 .hero-image::before{
 content:"";
@@ -161,7 +169,7 @@ width:100%;
 height:100%;
 border:2px solid rgba(179,139,77,.3);
 border-radius:24px;
-z-index:-1;
+z-index:0;
 }
 .info-grid{
 display:grid;
@@ -186,7 +194,7 @@ display:block;
 font-family:Jost;
 letter-spacing:.18em;
 text-transform:uppercase;
-color:var(--gold);
+color:var(--gold-text);
 margin-bottom:14px;
 }
 .card h3{
@@ -275,40 +283,31 @@ text-align:center;
 margin-bottom:60px;
 color:var(--green);
 }
-.sponsor-group{
-margin-bottom:55px;
-}
-.sponsor-group h3{
-font-family:Jost,sans-serif;
-font-size:1rem;
-letter-spacing:.18em;
-text-transform:uppercase;
-color:var(--gold);
-margin-bottom:22px;
-text-align:center;
-}
 .logo-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:24px;
 }
 .logo-card{
 background:white;
 border-radius:12px;
-padding:38px;
+padding:26px;
 display:flex;
 align-items:center;
 justify-content:center;
-min-height:120px;
+min-height:130px;
 box-shadow:var(--shadow);
-font-family:Jost,sans-serif;
-font-weight:600;
-font-size:1rem;
-color:var(--green);
 transition:.25s;
 }
 .logo-card:hover{
 transform:translateY(-5px);
+}
+.logo-card img{
+max-width:100%;
+max-height:70px;
+width:auto;
+height:auto;
+object-fit:contain;
 }
 .temas strong{
 font-weight:600;
@@ -458,6 +457,37 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
 }
 }
 </style>
+<!-- ══ EDITAR: confirmar morada, URL de inscricao e URL do cartaz ══ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Event",
+  "name":"V Conversas em Medicina Intensiva",
+  "description":"Sustentabilidade na Medicina Intensiva. Da evidência à prática, da intenção ao impacto.",
+  "startDate":"2026-10-23T09:00:00+01:00",
+  "endDate":"2026-10-23T18:00:00+01:00",
+  "eventStatus":"https://schema.org/EventScheduled",
+  "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+  "image":"https://exemplo.pt/cartaz.jpeg",
+  "location":{
+    "@type":"Place",
+    "name":"Auditório a confirmar",
+    "address":{"@type":"PostalAddress","addressLocality":"Aveiro","addressCountry":"PT"}
+  },
+  "organizer":{
+    "@type":"Organization",
+    "name":"Serviço de Medicina Intensiva — Unidade Local de Saúde da Região de Aveiro",
+    "url":"https://exemplo.pt/"
+  },
+  "offers":{
+    "@type":"Offer",
+    "price":"0",
+    "priceCurrency":"EUR",
+    "availability":"https://schema.org/InStock",
+    "url":"https://exemplo.pt/"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -492,8 +522,11 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
                 </a>
             </div>
             <div class="hero-image">
+                <!-- ══ EDITAR: acrescentar width e height reais do cartaz (evita salto de layout) ══ -->
                 <img
-                    src="cartaz.jpg"
+                    fetchpriority="high"
+                    decoding="async"
+                    src="cartaz.jpeg"
                     alt="Cartaz oficial das V Conversas em Medicina Intensiva">
             </div>
         </div>
@@ -557,35 +590,40 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
 
 <section class="sponsors">
     <div class="wrap">
-        <h2>Patrocinadores</h2>
-        <div class="sponsor-group">
-            <h3>Patrocínio Platina</h3>
-            <div class="logo-grid">
-                <div class="logo-card">
-                    Octapharma
-                </div>
+        <h2>Patrocinadores e apoios</h2>
+        <div class="logo-grid">
+            <div class="logo-card">
+                <img src="logos/octafarma.jpeg" alt="Octapharma" loading="lazy" decoding="async">
             </div>
-        </div>
-        <div class="sponsor-group">
-            <h3>Patrocínio Ouro</h3>
-            <div class="logo-grid">
-                <div class="logo-card">
-                    Caves da Montanha
-                </div>
-                <div class="logo-card">
-                    Henrique Dinis
-                </div>
+            <div class="logo-card">
+                <img src="logos/caves.jpeg" alt="Caves da Montanha" loading="lazy" decoding="async">
             </div>
-        </div>
-        <div class="sponsor-group">
-            <h3>Outros Apoios</h3>
-            <div class="logo-grid">
-                <div class="logo-card">
-                    Germano de Sousa
-                </div>
-                <div class="logo-card">
-                    La Mozzarella
-                </div>
+            <div class="logo-card">
+                <img src="logos/henrique_dinis.jpeg" alt="Henrique Dinis" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-card">
+                <img src="logos/medtronic.jpeg" alt="Medtronic" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-card">
+                <img src="logos/bbraun.jpeg" alt="B. Braun" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-card">
+                <img src="logos/germano_sousa.png" alt="Germano de Sousa — Centro de Medicina Laboratorial" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-card">
+                <img src="logos/mozarela.jpeg" alt="La Mozzarella Pizzaria" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-card">
+                <img src="logos/AVP.jpg" alt="Aliança" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-card">
+                <img src="logos/fernando_tavares.jpeg" alt="Fernando Branco Tavares & Filhas" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-card">
+                <img src="logos/navegador.jpeg" alt="O Navegante" loading="lazy" decoding="async">
+            </div>
+            <div class="logo-card">
+                <img src="logos/arcada.jpeg" alt="Arcada Imobiliária Glicínias" loading="lazy" decoding="async">
             </div>
         </div>
     </div>
@@ -635,10 +673,10 @@ padding-bottom:calc(14px + env(safe-area-inset-bottom));
     <div class="sticky-inner">
         <div>
             <strong>
-                V Conversas em Medicina Intensiva
+                V Conversas
             </strong>
             <small>
-                23 Outubro 2026 · Aveiro
+                23 Out 2026 · Aveiro
             </small>
         </div>
         <!-- ══ EDITAR: substituir o # pelo link do formulário de inscrição ══ -->
